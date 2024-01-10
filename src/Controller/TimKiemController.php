@@ -21,7 +21,7 @@ class TimKiemController {
                 exit();
             }
             else{
-                $_SESSION['dsphimtk'] = (new Phim())->getPhim(); // Đặt thành mảng rỗng khi không có tìm kiếm
+                $_SESSION['dsphimtk'] = (new Phim())->getPhim();
                 header("Location: ../user/home");
                 exit();
                 
