@@ -16,7 +16,6 @@ class ChiTietController extends Controller{
     public function showPhim($MaPhim) {
         $loai = $this->Loai->getLoai();
         $ctphim = $this->Phim->getPhimtheoma($MaPhim);
-
         $this->render('users\detail', ['ctphim' => $ctphim, 'loai'=> $loai]);
         
     }
